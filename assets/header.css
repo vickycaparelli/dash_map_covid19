@@ -1,0 +1,51 @@
+.wrapper{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin-bottom: 3rem;
+}
+h1{
+    font-size: 3rem;
+}
+
+.component-graph{
+   float: left;
+   width: 63%;
+}
+.components{
+    float: left;
+    font-size:2rem;
+    width:37%;
+ }
+ 
+.source{
+    font-size: 1.3rem;
+}
+.head{
+    margin:1rem;
+    padding: 1rem 15rem 0 5rem;
+    border-style: solid;
+    border-color: slategray;
+    text-align: justify;
+}
+
+.deaths{
+    color: #9D1107;
+    border-top:solid;
+    border-bottom:solid;
+    border-color: #9D1107; 
+    
+}
+
+.recovered{
+    color: #079D7C;
+    border-top:solid;
+    border-bottom: solid;
+    border-color: #079D7C; 
+}
+
+.total{
+    background-color: #F3E9E2;
+}
+
