@@ -1,0 +1,80 @@
+body{
+    background-color:#F6F6F4;
+}
+.wrapper{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+.wrapper-drop{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin-bottom: 3rem;
+}
+h1{
+    font-size: 1.8rem;
+}
+.par{
+    font-size: 1.2rem;
+}
+.component-graph{
+   float: left;
+   width: 63%;
+   margin-top: 1rem;
+}
+.components{
+    float: left;
+    font-size:1.3rem;
+    width:35%;
+    padding-right: 1rem;
+    margin-top: 1rem;
+ }
+ 
+.dropdown-text{
+    clear: both;
+    margin:1rem;
+    padding: 0 8rem 0 5rem;
+    border-style: solid;
+    border-color: slategray;
+    text-align: justify;
+}
+
+.source{
+    font-size: 1rem;
+}
+.head{
+    margin:1rem;
+    padding: 0 8rem 0 5rem;
+    border-style: solid;
+    border-color: slategray;
+    text-align: justify;
+}
+
+.deaths{
+    color: #9D1107;
+    border-top:solid;
+    border-bottom:solid;
+    background-color: white;
+    border-color: #9D1107; 
+    font-size: large;
+    
+}
+
+.recovered{
+    color: #079D7C;
+    border-top:solid;
+    border-bottom: solid;
+    background-color: white;
+    border-color: #079D7C; 
+    font-size: large;
+}
+
+.total{
+    background-color: #F3E9E2;
+    font-size: large;
+}
+
+
