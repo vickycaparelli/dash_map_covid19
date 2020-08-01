@@ -44,6 +44,14 @@ fig_sun_recovered =  px.sunburst(
                          color="total_recovered",
                          color_continuous_scale=px.colors.sequential.haline)
 
+f_map = px.choropleth(df, locations="ISO3_code",
+         color="total_cases",
+         hover_name="Country", # column to add to hover information
+         color_continuous_scale=px.colors.sequential.OrRd)
+
+
+
+
 app = dash.Dash(__name__)
 
 server = app.server
@@ -83,7 +91,7 @@ app.layout = html.Div(children=[
                     figure = fig_sun_recovered)
      ]),     
      html.Div(className="component-graph",children=[
-          dcc.Graph(id='the_graph')
+          dcc.Graph(id='the_graph', figure = f_map)
      ]),
      html.Div(className="components",children=[dash_table.DataTable(
         id='datatable-paging',
@@ -114,21 +122,14 @@ app.layout = html.Div(children=[
 
 
 @app.callback(
-     [Output('datatable-paging', 'data'),
-     Output(component_id='the_graph', component_property='figure')],
+     Output('datatable-paging', 'data'),
      [Input('datatable-paging', "page_current"),
       Input('datatable-paging', "page_size")])
 
 
 def update_table(page_current,page_size):
-
-    fig = px.choropleth(df, locations="ISO3_code",
-         color="total_cases",
-         hover_name="Country", # column to add to hover information
-         color_continuous_scale=px.colors.sequential.OrRd)
     
-    
-    return (df_data.iloc[page_current*page_size:(page_current+ 1)*page_size].to_dict('records'), fig)
+    return (df_data.iloc[page_current*page_size:(page_current+ 1)*page_size].to_dict('records'))
 
 
 @app.callback(
@@ -176,4 +177,4 @@ def update_drop(value):
      return return_divs
 
 if __name__ == '__main__':
-     app.run_server(debug=True)
+     app.run_server(debug=False)
