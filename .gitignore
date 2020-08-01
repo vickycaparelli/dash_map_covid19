@@ -1,2 +1,6 @@
 /__pycache__
 secrets.py
+venv
+*.pyc
+.DS_Store
+.env

@@ -1,6 +1,5 @@
 import pandas as pd
 import chardet
-import math
 
 class Data:
     def __init__(self):

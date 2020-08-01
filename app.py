@@ -10,7 +10,6 @@ from dash.dependencies import Input, Output, State
 from dash.exceptions import PreventUpdate
 
 import pandas as pd
-from datetime import datetime
 import secrets
 from data import Data
 from main_scraper import Conector
@@ -21,7 +20,7 @@ d = Data()
 c = Conector(secrets.API_KEY,secrets.PROJECT_TOKEN)
 
 df_data = d.to_df(c.get_country_data_all())
-df_localization = pd.read_csv('geo_data_2.csv', sep = ';', encoding=d.find_encoding('geo_data.csv'))
+df_localization = pd.read_csv('geo_data.csv', sep = ';', encoding=d.find_encoding('geo_data.csv'))
 
 df = pd.merge(df_localization, df_data, how='left', left_on='Country', right_on='name')
 df = d.conversion(df)
@@ -102,7 +101,8 @@ app.layout = html.Div(children=[
                                 html.H3("Select a country to find out how it was affected by the disease"),
                                 dcc.Dropdown(id='dropdown',
                                              options=d.get_country_options(df),
-                                             value='USA'
+                                             value='USA',
+                                             clearable=False
                                 ),
                                 html.P("The following summary exhibits how this country was affected by COVID-19 in comparison with the rest countries of the world."),
                                 html.P("The percentile represents the percentage of countries with less cases than the selected one. [Per millon of habitants. Separated in 3 categories (dead, recovered, confirmed)]")                
@@ -135,46 +135,43 @@ def update_table(page_current,page_size):
 
 
 def update_drop(value):
-    return_divs=[]
-    filter_rank = df[df['Country']==value]
+     return_divs=[]
+     filter_rank = df[df['Country']==value]
 
-    if((filter_rank['total_cases']==0).bool()):
-         return_divs.append(
-        html.Div(className="wrapper-drop", children=[
-            html.Div(className="deaths", children=[html.H2('Total Deaths'),
-                                html.H4("Not Reported")]),
-            html.Div(className="total", children=[html.H2('Total Cases'),
-                                html.H4("Not Reported")]),
-            html.Div(className="recovered", children=[html.H2('Total Recovered'),
-                                html.H4("Not Reported")]),
-            html.Div(className="deaths", children=[html.H3('Total Deaths - Percentile (th)'),
-                                html.H5("-") ] ),
-            html.Div(className="total", children=[html.H3('Total Cases - Percentile (th)'),
-                                html.H5("-")]),
-            html.Div(className="recovered", children=[html.H3('Total Recovered - Percentile (th)'),
-                                html.H5("-") ] ),
-         ])
-    )
-
-    else:
-         return_divs.append(
-        html.Div(className="wrapper-drop", children=[
-            html.Div(className="deaths", children=[html.H2('Total Deaths'),
-                                html.H4(filter_rank['total_deaths'].apply('{:,}'.format))]),
-            html.Div(className="total", children=[html.H2('Total Cases'),
-                                html.H4(filter_rank['total_cases'].apply('{:,}'.format))]),
-            html.Div(className="recovered", children=[html.H2('Total Recovered'),
-                                html.H4(filter_rank['total_recovered'].apply('{:,}'.format))]),
-            html.Div(className="deaths", children=[html.H3('Total Deaths - Percentile (th)'),
-                                html.H5(filter_rank['t_deaths_rank']) ] ),
-            html.Div(className="total", children=[html.H3('Total Cases - Percentile (th)'),
-                                html.H5(filter_rank['t_cases_rank'])]),
-            html.Div(className="recovered", children=[html.H3('Total Recovered - Percentile (th)'),
-                                html.H5(filter_rank['t_recovered_rank']) ] ),
-         ]) )
-
-
-    return return_divs
+     if((filter_rank['total_cases']==0).bool()):
+         filter_rank['total_cases']="Not Reported"
+         filter_rank['t_cases_rank']="-"
+     else:
+          filter_rank['total_cases'] = filter_rank['total_cases'].apply('{:,}'.format)
+    
+     if((filter_rank['total_deaths']==0).bool()):
+         filter_rank['total_deaths']="Not Reported"
+         filter_rank['t_deaths_rank']="-"
+     else:
+          filter_rank['total_deaths'] = filter_rank['total_deaths'].apply('{:,}'.format)
+    
+     if((filter_rank['total_recovered']==0).bool()):
+         filter_rank['total_recovered']="Not Reported"
+         filter_rank['t_recovered_rank']="-"
+     else:
+          filter_rank['total_recovered'] = filter_rank['total_recovered'].apply('{:,}'.format)
+    
+     return_divs.append(html.Div(className="wrapper-drop", children=[
+               html.Div(className="deaths", children=[html.H2('Total Deaths'),
+                                   html.H4(filter_rank['total_deaths'])]),
+               html.Div(className="total", children=[html.H2('Total Cases'),
+                                   html.H4(filter_rank['total_cases'])]),
+               html.Div(className="recovered", children=[html.H2('Total Recovered'),
+                                   html.H4(filter_rank['total_recovered'])]),
+               html.Div(className="deaths", children=[html.H3('Total Deaths - Percentile (th)'),
+                                   html.H5(filter_rank['t_deaths_rank']) ] ),
+               html.Div(className="total", children=[html.H3('Total Cases - Percentile (th)'),
+                                   html.H5(filter_rank['t_cases_rank'])]),
+               html.Div(className="recovered", children=[html.H3('Total Recovered - Percentile (th)'),
+                                   html.H5(filter_rank['t_recovered_rank']) ] ),
+     ]) )
+     
+     return return_divs
 
 if __name__ == '__main__':
      app.run_server(debug=True)

@@ -1,7 +1,6 @@
 import requests
 import json
-import time
-import threading
+
 
 class Conector:
     def __init__(self, api_key, project_token):
@@ -70,18 +69,3 @@ class Conector:
         return self.last_date
         
 
-    def update_data(self): 
-        requests.post('https://www.parsehub.com/api/v2/projects/{self.project_token}/run', params=self.api_key)
-        def poll():
-            time.sleep(0.1)
-            old_data = self.data
-            while True:
-                new_data=self.get_data()
-                if old_data != new_data:
-                    self.data = new_data
-                    print("Data updated")
-                    break
-                time.sleep(5)
-
-        t = threading.Thread(target=poll)
-        t.start()

@@ -1,5 +1,5 @@
 Country;ISO3_code;Population;Continent
-Aruba;ABW;106766;Central America and the Caribbean
+Aruba;ABW;106766;Central America/Caribbean
 Afghanistan;AFG;38928346;Asia
 Angola;AGO;32866272;Africa
 Anguilla;AIA;15003;North America
@@ -11,27 +11,27 @@ Argentina;ARG;45195774;South America
 Armenia;ARM;2963243;Europe
 American Samoa;ASM;55191;Oceania
 Antarctica;ATA;0;Antarctica
-Antigua and Barbuda;ATG;97929;Central America and the Caribbean
+Antigua and Barbuda;ATG;97929;Central America/Caribbean
 Australia;AUS;25499884;Oceania
 Austria;AUT;9006398;Europe
 Azerbaijan;AZE;10139177;Asia
 Burundi;BDI;11890784;Africa
 Belgium;BEL;11589623;Europe
 Benin;BEN;12123200;Africa
-Caribbean Netherlands;BES;26223;Central America and the Caribbean
+Caribbean Netherlands;BES;26223;Central America/Caribbean
 Burkina Faso;BFA;20903273;Africa
 Bangladesh;BGD;164689383;Asia
 Bulgaria;BGR;6948445;Europe
 Bahrain;BHR;1701575;Asia
-Bahamas;BHS;393244;Central America and the Caribbean
+Bahamas;BHS;393244;Central America/Caribbean
 Bosnia and Herzegovina;BIH;3280819;Europe
-St. Barth;BLM;9877;Central America and the Caribbean
+St. Barth;BLM;9877;Central America/Caribbean
 Belarus;BLR;9449323;Europe
-Belize;BLZ;397628;Central America and the Caribbean
+Belize;BLZ;397628;Central America/Caribbean
 Bermuda;BMU;62278;South America
 Bolivia;BOL;11673021;South America
 Brazil;BRA;212559417;South America
-Barbados;BRB;287375;Central America and the Caribbean
+Barbados;BRB;287375;Central America/Caribbean
 Brunei;BRN;437479;Asia
 Bhutan;BTN;771608;Asia
 Botswana;BWA;2351627;Africa
@@ -49,18 +49,18 @@ Cook Islands;COK;17564;Oceania
 Colombia;COL;50882891;South America
 Comoros;COM;869601;Africa
 Cabo Verde;CPV;555987;Africa
-Costa Rica;CRI;5094118;Central America and the Caribbean
+Costa Rica;CRI;5094118;Central America/Caribbean
 Cuba;CUB;11326616;North America
 Curaçao;CUW;164093;South America
 Christmas Island;CXR;1403;Asia
-Cayman Islands;CYM;65722;Central America and the Caribbean
+Cayman Islands;CYM;65722;Central America/Caribbean
 Cyprus;CYP;1207359;Asia
 Czechia;CZE;10708981;Europe
 Germany;DEU;83783942;Europe
 Djibouti;DJI;988;Africa
-Dominica;DMA;71986;Central America and the Caribbean
+Dominica;DMA;71986;Central America/Caribbean
 Denmark;DNK;5792202;Europe
-Dominican Republic;DOM;10847910;Central America and the Caribbean
+Dominican Republic;DOM;10847910;Central America/Caribbean
 Algeria;DZA;43851044;Africa
 Ecuador;ECU;17643054;South America
 Egypt;EGY;102334404;Africa
@@ -81,21 +81,21 @@ Georgia;GEO;3989167;Europe
 Ghana;GHA;31072940;Africa
 Gibraltar;GIB;33691;Europe
 Guinea;GIN;13132795;Africa
-Guadeloupe;GLP;400124;Central America and the Caribbean
+Guadeloupe;GLP;400124;Central America/Caribbean
 Gambia;GMB;2416668;Africa
 Guinea-Bissau;GNB;1968001;Africa
 Equatorial Guinea;GNQ;1402985;Africa
 Greece;GRC;10423054;Europe
-Grenada;GRD;112523;Central America and the Caribbean
+Grenada;GRD;112523;Central America/Caribbean
 Greenland;GRL;5677;North America
-Guatemala;GTM;17915568;Central America and the Caribbean
+Guatemala;GTM;17915568;Central America/Caribbean
 French Guiana;GUF;298682;South America
 Guam;GUM;168775;Oceania
 Guyana;GUY;786552;South America
 Hong Kong;HKG;7496981;Asia
-Honduras;HND;9904607;Central America and the Caribbean
+Honduras;HND;9904607;Central America/Caribbean
 Croatia;HRV;4105267;Europe
-Haiti;HTI;11402528;Central America and the Caribbean
+Haiti;HTI;11402528;Central America/Caribbean
 Hungary;HUN;9660351;Europe
 Indonesia;IDN;273523615;Asia
 Isle of Man;IMN;85033;Europe
@@ -106,7 +106,7 @@ Iraq;IRQ;40222493;Asia
 Iceland;ISL;341243;Europe
 Israel;ISR;8655535;Asia
 Italy;ITA;60461826;Europe
-Jamaica;JAM;2961167;Central America and the Caribbean
+Jamaica;JAM;2961167;Central America/Caribbean
 Jersey;JEY;97857;Europe
 Jordan;JOR;10203134;Asia
 Japan;JPN;126476461;Asia
@@ -115,14 +115,14 @@ Kenya;KEN;53771296;Africa
 Kyrgyzstan;KGZ;6524195;Asia
 Cambodia;KHM;16718965;Africa
 Kiribati;KIR;119449;Oceania
-Saint Kitts and Nevis;KNA;54961;Central America and the Caribbean
+Saint Kitts and Nevis;KNA;54961;Central America/Caribbean
 S. Korea;KOR;51269185;Asia
 Kuwait;KWT;4270571;Asia
 Laos;LAO;7275560;Asia
 Lebanon;LBN;6825445;Asia
 Liberia;LBR;5057681;Africa
 Libya;LBY;6871292;Africa
-Saint Lucia;LCA;183627;Central America and the Caribbean
+Saint Lucia;LCA;183627;Central America/Caribbean
 Liechtenstein;LIE;38128;Europe
 Sri Lanka;LKA;21413249;Asia
 Lesotho;LSO;2142249;Africa
@@ -130,7 +130,7 @@ Lithuania;LTU;2722289;Europe
 Luxembourg;LUX;625978;Europe
 Latvia;LVA;1886198;Europe
 Macao;MAC;649335;Asia
-Saint Martin;MAF;38666;Central America and the Caribbean
+Saint Martin;MAF;38666;Central America/Caribbean
 Morocco;MAR;36910560;Africa
 Monaco;MCO;39242;Europe
 Moldova;MDA;4033963;Europe
@@ -147,8 +147,8 @@ Mongolia;MNG;3278290;Asia
 Northern Mariana Islands;MNP;57559;Oceania
 Mozambique;MOZ;31255435;Africa
 Mauritania;MRT;4649658;Africa
-Montserrat;MSR;4992;Central America and the Caribbean
-Martinique;MTQ;375265;Central America and the Caribbean
+Montserrat;MSR;4992;Central America/Caribbean
+Martinique;MTQ;375265;Central America/Caribbean
 Mauritius;MUS;1271768;Africa
 Malawi;MWI;19129952;Africa
 Malaysia;MYS;32365999;Asia
@@ -158,7 +158,7 @@ New Caledonia;NCL;285498;Oceania
 Niger;NER;24206644;Africa
 Norfolk Island;NFK;2169;Oceania
 Nigeria;NGA;206139589;Africa
-Nicaragua;NIC;6624554;Central America and the Caribbean
+Nicaragua;NIC;6624554;Central America/Caribbean
 Niue;NIU;1626;Oceania
 Netherlands;NLD;17134872;Europe
 Norway;NOR;5421241;Europe
@@ -167,7 +167,7 @@ Nauru;NRU;10824;Oceania
 New Zealand;NZL;4822233;Oceania
 Oman;OMN;5106626;Asia
 Pakistan;PAK;220892340;Asia
-Panama;PAN;4314767;Central America and the Caribbean
+Panama;PAN;4314767;Central America/Caribbean
 Peru;PER;32971854;South America
 Philippines;PHL;109581078;Asia
 Palau;PLW;18094;Oceania
@@ -193,7 +193,7 @@ Saint Helena, Ascension and Tristan da Cunha;SHN;4534;Africa
 Svalbard and Jan Mayen;SJM;2700;Europe
 Solomon Islands;SLB;686884;Oceania
 Sierra Leone;SLE;7976983;Africa
-El Salvador;SLV;6486205;Central America and the Caribbean
+El Salvador;SLV;6486205;Central America/Caribbean
 San Marino;SMR;33931;Europe
 Somalia;SOM;15893222;Africa
 Saint Pierre Miquelon;SPM;5794;North America
@@ -205,10 +205,10 @@ Slovakia;SVK;5459642;Europe
 Slovenia;SVN;2078938;Europe
 Sweden;SWE;10099265;Europe
 Eswatini;SWZ;1160164;Africa
-Sint Maarten;SXM;42876;Central America and the Caribbean
+Sint Maarten;SXM;42876;Central America/Caribbean
 Seychelles;SYC;98347;Africa
 Syria;SYR;17500658;Asia
-Turks and Caicos;TCA;38717;Central America and the Caribbean
+Turks and Caicos;TCA;38717;Central America/Caribbean
 Chad;TCD;16425864;Africa
 Togo;TGO;8278724;Africa
 Thailand;THA;69799978;Asia
@@ -230,10 +230,10 @@ Uruguay;URY;3473730;South America
 USA;USA;331002651;North America
 Uzbekistan;UZB;33469203;Asia
 Holy See;VAT;801;Europe
-St. Vincent Grenadines;VCT;11094;Central America and the Caribbean
+St. Vincent Grenadines;VCT;11094;Central America/Caribbean
 Venezuela;VEN;28435940;South America
-British Virgin Islands;VGB;30231;Central America and the Caribbean
-Virgin Islands (U.S.);VIR;104425;Central America and the Caribbean
+British Virgin Islands;VGB;30231;Central America/Caribbean
+Virgin Islands (U.S.);VIR;104425;Central America/Caribbean
 Vietnam;VNM;97338579;Asia
 Vanuatu;VUT;307145;Oceania
 Wallis and Futuna;WLF;15289;Oceania
