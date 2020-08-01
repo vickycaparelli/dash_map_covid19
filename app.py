@@ -53,6 +53,7 @@ f_map = px.choropleth(df, locations="ISO3_code",
 
 
 app = dash.Dash(__name__)
+app.title = 'Covid19 - Dashboard'
 
 server = app.server
 
@@ -117,7 +118,14 @@ app.layout = html.Div(children=[
                                 html.P("The following summary exhibits how this country was affected by COVID-19 in comparison with the rest countries of the world."),
                                 html.P("The percentile represents the percentage of countries with less cases than the selected one. [Per millon of habitants. Separated in 3 categories (dead, recovered, confirmed)]")                
         ]),
-    html.Div(id = 'container-out')
+    html.Div(id = 'container-out'),
+    html.Footer(id = 'footer', children = [html.Div(children = [
+                                                                 html.Span("Together we stop the spread |"),
+                                                                 html.A("View Source Code on Github", href = ''),
+                                                                 html.Span("| vicky.py 2020")
+                                                                 ])                                                               
+
+    ])
  ])
 
 

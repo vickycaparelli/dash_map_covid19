@@ -1,18 +1,21 @@
 body{
     background-color:#F6F6F4;
+    margin: 0px;
+    padding: 0px;
 }
 .wrapper{
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
+    margin: 0 1em 0 1em;
 }
 .wrapper-drop{
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
-    margin-bottom: 3rem;
+    margin: 1em;
 }
 h1{
     font-size: 1.8rem;
@@ -22,15 +25,14 @@ h1{
 }
 .component-graph{
    float: left;
-   width: 63%;
-   margin-top: 1rem;
+   width: 57%;
+   margin: 1em 0 0 1em;
 }
 .components{
     float: left;
-    font-size:1.3rem;
-    width:35%;
-    padding-right: 1rem;
-    margin-top: 1rem;
+    font-size:1.2em;
+    width:40%;
+    margin: 1em 1em 0 0;
  }
  
 .dropdown-text{
@@ -77,4 +79,11 @@ h1{
     font-size: large;
 }
 
-
+footer{
+    height: 1em;
+    padding-top: 0.5em;
+    background-color: slategray;
+    color: white;
+    font-weight: bold;
+    text-align: right;
+}

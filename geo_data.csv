@@ -1,5 +1,5 @@
 Country;ISO3_code;Continent
-Aruba;ABW;Central America/Caribbean
+Aruba;ABW;C. America/Caribbean
 Afghanistan;AFG;Asia
 Angola;AGO;Africa
 Anguilla;AIA;North America
@@ -11,27 +11,27 @@ Argentina;ARG;South America
 Armenia;ARM;Europe
 American Samoa;ASM;Oceania
 Antarctica;ATA;Antarctica
-Antigua and Barbuda;ATG;Central America/Caribbean
+Antigua and Barbuda;ATG;C. America/Caribbean
 Australia;AUS;Oceania
 Austria;AUT;Europe
 Azerbaijan;AZE;Asia
 Burundi;BDI;Africa
 Belgium;BEL;Europe
 Benin;BEN;Africa
-Caribbean Netherlands;BES;Central America/Caribbean
+Caribbean Netherlands;BES;C. America/Caribbean
 Burkina Faso;BFA;Africa
 Bangladesh;BGD;Asia
 Bulgaria;BGR;Europe
 Bahrain;BHR;Asia
-Bahamas;BHS;Central America/Caribbean
+Bahamas;BHS;C. America/Caribbean
 Bosnia and Herzegovina;BIH;Europe
-St. Barth;BLM;Central America/Caribbean
+St. Barth;BLM;C. America/Caribbean
 Belarus;BLR;Europe
-Belize;BLZ;Central America/Caribbean
+Belize;BLZ;C. America/Caribbean
 Bermuda;BMU;South America
 Bolivia;BOL;South America
 Brazil;BRA;South America
-Barbados;BRB;Central America/Caribbean
+Barbados;BRB;C. America/Caribbean
 Brunei;BRN;Asia
 Bhutan;BTN;Asia
 Botswana;BWA;Africa
@@ -49,18 +49,18 @@ Cook Islands;COK;Oceania
 Colombia;COL;South America
 Comoros;COM;Africa
 Cabo Verde;CPV;Africa
-Costa Rica;CRI;Central America/Caribbean
+Costa Rica;CRI;C. America/Caribbean
 Cuba;CUB;North America
 Curaçao;CUW;South America
 Christmas Island;CXR;Asia
-Cayman Islands;CYM;Central America/Caribbean
+Cayman Islands;CYM;C. America/Caribbean
 Cyprus;CYP;Asia
 Czechia;CZE;Europe
 Germany;DEU;Europe
 Djibouti;DJI;Africa
-Dominica;DMA;Central America/Caribbean
+Dominica;DMA;C. America/Caribbean
 Denmark;DNK;Europe
-Dominican Republic;DOM;Central America/Caribbean
+Dominican Republic;DOM;C. America/Caribbean
 Algeria;DZA;Africa
 Ecuador;ECU;South America
 Egypt;EGY;Africa
@@ -81,21 +81,21 @@ Georgia;GEO;Europe
 Ghana;GHA;Africa
 Gibraltar;GIB;Europe
 Guinea;GIN;Africa
-Guadeloupe;GLP;Central America/Caribbean
+Guadeloupe;GLP;C. America/Caribbean
 Gambia;GMB;Africa
 Guinea-Bissau;GNB;Africa
 Equatorial Guinea;GNQ;Africa
 Greece;GRC;Europe
-Grenada;GRD;Central America/Caribbean
+Grenada;GRD;C. America/Caribbean
 Greenland;GRL;North America
-Guatemala;GTM;Central America/Caribbean
+Guatemala;GTM;C. America/Caribbean
 French Guiana;GUF;South America
 Guam;GUM;Oceania
 Guyana;GUY;South America
 Hong Kong;HKG;Asia
-Honduras;HND;Central America/Caribbean
+Honduras;HND;C. America/Caribbean
 Croatia;HRV;Europe
-Haiti;HTI;Central America/Caribbean
+Haiti;HTI;C. America/Caribbean
 Hungary;HUN;Europe
 Indonesia;IDN;Asia
 Isle of Man;IMN;Europe
@@ -106,7 +106,7 @@ Iraq;IRQ;Asia
 Iceland;ISL;Europe
 Israel;ISR;Asia
 Italy;ITA;Europe
-Jamaica;JAM;Central America/Caribbean
+Jamaica;JAM;C. America/Caribbean
 Jersey;JEY;Europe
 Jordan;JOR;Asia
 Japan;JPN;Asia
@@ -115,14 +115,14 @@ Kenya;KEN;Africa
 Kyrgyzstan;KGZ;Asia
 Cambodia;KHM;Africa
 Kiribati;KIR;Oceania
-Saint Kitts and Nevis;KNA;Central America/Caribbean
+Saint Kitts and Nevis;KNA;C. America/Caribbean
 S. Korea;KOR;Asia
 Kuwait;KWT;Asia
 Laos;LAO;Asia
 Lebanon;LBN;Asia
 Liberia;LBR;Africa
 Libya;LBY;Africa
-Saint Lucia;LCA;Central America/Caribbean
+Saint Lucia;LCA;C. America/Caribbean
 Liechtenstein;LIE;Europe
 Sri Lanka;LKA;Asia
 Lesotho;LSO;Africa
@@ -130,7 +130,7 @@ Lithuania;LTU;Europe
 Luxembourg;LUX;Europe
 Latvia;LVA;Europe
 Macao;MAC;Asia
-Saint Martin;MAF;Central America/Caribbean
+Saint Martin;MAF;C. America/Caribbean
 Morocco;MAR;Africa
 Monaco;MCO;Europe
 Moldova;MDA;Europe
@@ -147,8 +147,8 @@ Mongolia;MNG;Asia
 Northern Mariana Islands;MNP;Oceania
 Mozambique;MOZ;Africa
 Mauritania;MRT;Africa
-Montserrat;MSR;Central America/Caribbean
-Martinique;MTQ;Central America/Caribbean
+Montserrat;MSR;C. America/Caribbean
+Martinique;MTQ;C. America/Caribbean
 Mauritius;MUS;Africa
 Malawi;MWI;Africa
 Malaysia;MYS;Asia
@@ -158,7 +158,7 @@ New Caledonia;NCL;Oceania
 Niger;NER;Africa
 Norfolk Island;NFK;Oceania
 Nigeria;NGA;Africa
-Nicaragua;NIC;Central America/Caribbean
+Nicaragua;NIC;C. America/Caribbean
 Niue;NIU;Oceania
 Netherlands;NLD;Europe
 Norway;NOR;Europe
@@ -167,7 +167,7 @@ Nauru;NRU;Oceania
 New Zealand;NZL;Oceania
 Oman;OMN;Asia
 Pakistan;PAK;Asia
-Panama;PAN;Central America/Caribbean
+Panama;PAN;C. America/Caribbean
 Peru;PER;South America
 Philippines;PHL;Asia
 Palau;PLW;Oceania
@@ -193,7 +193,7 @@ Saint Helena, Ascension and Tristan da Cunha;SHN;Africa
 Svalbard and Jan Mayen;SJM;Europe
 Solomon Islands;SLB;Oceania
 Sierra Leone;SLE;Africa
-El Salvador;SLV;Central America/Caribbean
+El Salvador;SLV;C. America/Caribbean
 San Marino;SMR;Europe
 Somalia;SOM;Africa
 Saint Pierre Miquelon;SPM;North America
@@ -205,10 +205,10 @@ Slovakia;SVK;Europe
 Slovenia;SVN;Europe
 Sweden;SWE;Europe
 Eswatini;SWZ;Africa
-Sint Maarten;SXM;Central America/Caribbean
+Sint Maarten;SXM;C. America/Caribbean
 Seychelles;SYC;Africa
 Syria;SYR;Asia
-Turks and Caicos;TCA;Central America/Caribbean
+Turks and Caicos;TCA;C. America/Caribbean
 Chad;TCD;Africa
 Togo;TGO;Africa
 Thailand;THA;Asia
@@ -230,10 +230,10 @@ Uruguay;URY;South America
 USA;USA;North America
 Uzbekistan;UZB;Asia
 Holy See;VAT;Europe
-St. Vincent Grenadines;VCT;Central America/Caribbean
+St. Vincent Grenadines;VCT;C. America/Caribbean
 Venezuela;VEN;South America
-British Virgin Islands;VGB;Central America/Caribbean
-Virgin Islands (U.S.);VIR;Central America/Caribbean
+British Virgin Islands;VGB;C. America/Caribbean
+Virgin Islands (U.S.);VIR;C. America/Caribbean
 Vietnam;VNM;Asia
 Vanuatu;VUT;Oceania
 Wallis and Futuna;WLF;Oceania
