@@ -17,4 +17,5 @@ Data sources:
 
 Access to the dashboard: https://dash-map-covid19.herokuapp.com/
 
-<img src=“https://github.com/vickycaparelli/dash_map_covid19/blob/master/images/screencapture-dash-map-covid19-herokuapp-2020-08-01-22_42_29.png”>
+![Screenshot](https://github.com/vickycaparelli/dash_map_covid19/blob/master/images/screencapture-dash-map-covid19-herokuapp-2020-08-01-22_42_29.png)
+

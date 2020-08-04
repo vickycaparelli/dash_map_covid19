@@ -119,7 +119,7 @@ app.layout = html.Div(children=[
     html.Div(id = 'container-out'),
     html.Footer(id = 'footer', children = [html.Div(children = [
                                                                  html.Span("Together we stop the spread |"),
-                                                                 html.A("View Source Code on Github", href = ''),
+                                                                 html.A("View Source Code on Github", href = 'https://github.com/vickycaparelli/dash_map_covid19'),
                                                                  html.Span("| vicky.py 2020")
                                                                  ])                                                               
 
