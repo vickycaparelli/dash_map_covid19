@@ -1,36 +1,41 @@
 import pandas as pd
 import chardet
+import secrets
+from main_scraper import Conector
 
-class Data:
-    def __init__(self):
-        pass
 
-    def get_country_options(self,options):
-        out=[]
-        options = sorted(options['Country'])
-        for country in options:
-            out.append({'label': country, 'value':country})
+class DataHandler:
+    def __init__(self, api_conector):
+        self.api_conector = api_conector
+        self.country_data = self.get_country_data()
+        self.country_options = self.get_country_options()
+
+    def get_country_options(self):
+
+        out=[{'label': country, 'value':country} for country in self.country_data['name']]
 
         return out
 
-
-    
-    def to_df(self,raw_data):
+    @staticmethod
+    def to_df(raw_data):
         result='[]'
         if(raw_data):
             result=pd.json_normalize(raw_data)
             result.set_index('name')
             
         return result
+
+    def get_country_data(self):
+        return DataHandler.to_df(self.api_conector.get_country_data_all())
     
-    def rename(self,df):
+    @staticmethod
+    def rename(df):
         result = df
         result.columns = ['Country', 'Total Cases', 'Total Deaths', 'Total Recovered'] 
         return result
 
-
-    def conversion(self,df_i):
-        df = df_i
+    @staticmethod
+    def conversion(df):
         df['total_cases']=df['total_cases'].str.replace(",","")
         df = df.fillna(0)
         df['total_cases']=df['total_cases'].astype(int)
@@ -46,11 +51,10 @@ class Data:
         df['total_recovered']=df['total_recovered'].astype(int)
         df['t_recovered_rank'] = round(df.total_recovered.rank(pct=True, method = 'min')*100)
 
-
         return df
 
-
-    def find_encoding(self, file):
+    @staticmethod
+    def find_encoding(file):
         with open(file, 'rb') as f:
             f_encoding = chardet.detect(f.read())
         return f_encoding['encoding']
