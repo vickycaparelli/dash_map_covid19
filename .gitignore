@@ -3,5 +3,4 @@ venv
 *.pyc
 .DS_Store
 .env
-secrets.py
 .vscode
