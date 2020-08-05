@@ -1,7 +1,5 @@
 import pandas as pd
 import chardet
-import secrets
-from main_scraper import Conector
 
 
 class DataHandler:
@@ -11,10 +9,7 @@ class DataHandler:
         self.country_options = self.get_country_options()
 
     def get_country_options(self):
-
-        out=[{'label': country, 'value':country} for country in self.country_data['name']]
-
-        return out
+        return [{'label': country, 'value':country} for country in self.country_data['name']]
 
     @staticmethod
     def to_df(raw_data):
@@ -30,9 +25,8 @@ class DataHandler:
     
     @staticmethod
     def rename(df):
-        result = df
-        result.columns = ['Country', 'Total Cases', 'Total Deaths', 'Total Recovered'] 
-        return result
+        df.columns = ['Country', 'Total Cases', 'Total Deaths', 'Total Recovered'] 
+        return df
 
     @staticmethod
     def conversion(df):
